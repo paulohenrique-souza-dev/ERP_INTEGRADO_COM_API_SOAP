@@ -13,7 +13,7 @@ Projeto ERP com integração SOAP utilizando:
 ## 1. Clone o repositório
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/paulohenrique-souza-dev/ERP_INTEGRADO_COM_API_SOAP
 ```
 
 Entre na pasta:
@@ -32,7 +32,7 @@ Na raiz do projeto execute:
 docker compose up --build
 ```
 
-Pronto ✅
+Pronto o projeto já deve rodar ✅
 
 ---
 
@@ -79,27 +79,11 @@ http://localhost:5000/health
 # 📁 Estrutura do projeto
 
 ```txt
-backend/   → API Flask + SOAP
-frontend/  → Interface React
+backend/   → API Flask que consome Api SOAP
+frontend/  → Interface React que consome Backend do Flask
 ```
 
----
 
-# ⚠️ Importante
-
-Quando estiver usando Docker, o frontend acessa o backend usando:
-
-```txt
-http://backend:5000
-```
-
-e não:
-
-```txt
-http://localhost:5000
-```
-
----
 
 # ⛔ Parar containers
 
