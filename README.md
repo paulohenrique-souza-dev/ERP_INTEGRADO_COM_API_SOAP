@@ -1,22 +1,22 @@
-# ERP SOAP 🚀
+# ERP & Análises 
 
-Projeto ERP com integração SOAP utilizando:
+Projeto FullStack ERP com integração SOAP utilizando:
 
-- React + Vite
-- Flask
-- Docker
+- React + Vite para consumir Backend em Flask.
+- Flask para consumir API Soap.
+
 
 ---
 
 # 📦 Como rodar o projeto
 
-## 1. Clone o repositório
+## 1. Clone o meu repositório com:
 
 ```bash
 git clone https://github.com/paulohenrique-souza-dev/ERP_INTEGRADO_COM_API_SOAP
 ```
 
-Entre na pasta:
+Após isso Entre na pasta:
 
 ```bash
 cd erp-soap
@@ -24,15 +24,16 @@ cd erp-soap
 
 ---
 
-# 🐳 Rodando com Docker
+#  Estou utilizando docker para subir as instâncias, para rodar docker no seu pc tem que ter no mininimo 16 gb de ram.
+#  Caso não tenha só da para rodar um de cada vez.
 
-Na raiz do projeto execute:
+Se tiver Docker e seus requisitos na raiz do projeto execute:
 
 ```bash
-docker compose up --build
+docker compose up --build 
 ```
 
-Pronto o projeto já deve rodar ✅
+Pronto, com isso as aplicações já deve rodar ✅
 
 ---
 
@@ -41,7 +42,7 @@ Pronto o projeto já deve rodar ✅
 ## Frontend
 
 ```txt
-http://localhost:5173
+http://localhost:3000
 ```
 
 ## Backend
@@ -50,42 +51,32 @@ http://localhost:5173
 http://localhost:5000
 ```
 
-## Health Check
 
-```txt
-http://localhost:5000/health
-```
 
 ---
 
-# 🛠 Tecnologias
+# 🛠 Tecnologias Utilizadas para Dev
 
 ## Frontend
 - React
 - Vite
 - Axios
 - React Router DOM
+- CSS
+- JS
 
 ## Backend
 - Flask
 - Flask CORS
+  
 
-## Infra
-- Docker
-- Docker Compose
 
 ---
 
-# 📁 Estrutura do projeto
-
-```txt
-backend/   → API Flask que consome Api SOAP
-frontend/  → Interface React que consome Backend do Flask
-```
 
 
 
-# ⛔ Parar containers
+#  Para parar containers:
 
 ```bash
 docker compose down
@@ -93,6 +84,6 @@ docker compose down
 
 ---
 
-# 👨‍💻 Autor
+Esse foi mais um projeto, até a próxima!
 
-Projeto desenvolvido para estudos e integração ERP SOAP.
+
